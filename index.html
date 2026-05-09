@@ -32,7 +32,7 @@ body{
     animation:bgMove 12s ease infinite;
 }
 
-/* Background Animation */
+/* Background */
 
 @keyframes bgMove{
 
@@ -121,7 +121,7 @@ body{
     transform:scale(1.08);
 }
 
-/* Balloon Area */
+/* Game */
 
 .game{
 
@@ -133,7 +133,7 @@ body{
     display:none;
 }
 
-/* Balloon Base */
+/* Balloons */
 
 .balloon{
 
@@ -184,7 +184,7 @@ body{
     background:white;
 }
 
-/* Better Balloon Layout */
+/* Balloon Layout */
 
 .balloon1{
     background:#ff006e;
@@ -377,7 +377,7 @@ body{
     font-weight:700;
 }
 
-/* Floating Hearts */
+/* Hearts */
 
 .heart{
 
@@ -418,24 +418,6 @@ body{
     }
 }
 
-/* Mobile */
-
-@media(max-width:480px){
-
-    .intro h1{
-        font-size:34px;
-    }
-
-    .intro p{
-        font-size:15px;
-    }
-
-    .balloon{
-        font-size:12px;
-    }
-
-}
-
 </style>
 </head>
 
@@ -473,43 +455,43 @@ body{
 <div class="game" id="game">
 
 <div class="balloon balloon1"
-onclick="openPopup('children/subi1.jpg','You are our safe place ❤️','No matter how old we grow, your hugs still feel like home 🌸',event)">
+onclick="openPopup('subi1.jpg','You are our safe place ❤️','No matter how old we grow, your hugs still feel like home 🌸',event)">
 Love</div>
 
 <div class="balloon balloon2"
-onclick="openPopup('children/subi2.jpg','The heart of our family 💖','Everything feels better when you are around Amma ✨',event)">
+onclick="openPopup('subi2.png','The heart of our family 💖','Everything feels better when you are around Amma ✨',event)">
 Smile</div>
 
 <div class="balloon balloon3"
-onclick="openPopup('children/subi3.jpg','Our forever superhero 🌷','Thank you for being strong even on difficult days ❤️',event)">
+onclick="openPopup('subi3.jpg','Our forever superhero 🌷','Thank you for being strong even on difficult days ❤️',event)">
 Amma</div>
 
 <div class="balloon balloon4"
-onclick="openPopup('children/subi4.jpg','You made childhood magical 💕','Every little thing you did became our favorite memory ✨',event)">
+onclick="openPopup('subi4.jpg','You made childhood magical 💕','Every little thing you did became our favorite memory ✨',event)">
 Hug</div>
 
 <div class="balloon balloon5"
-onclick="openPopup('children/subi9.jpg','Home will always be you 🏡','Your love is the warmest place in our lives 💖',event)">
+onclick="openPopup('subi5.jpg','Home will always be you 🏡','Your love is the warmest place in our lives 💖',event)">
 Home</div>
 
 <div class="balloon balloon6"
-onclick="openPopup('children/subi6.jpg','Thank you for every sacrifice ❤️','You gave us everything even when you had little 🌸',event)">
+onclick="openPopup('subi6.jpg','Thank you for every sacrifice ❤️','You gave us everything even when you had little 🌸',event)">
 Queen</div>
 
 <div class="balloon balloon7"
-onclick="openPopup('children/subi7.jpg','You are pure love 💗','No one in this world can love like you Amma ✨',event)">
+onclick="openPopup('subi7.jpg','You are pure love 💗','No one in this world can love like you Amma ✨',event)">
 Happy</div>
 
 <div class="balloon balloon8"
-onclick="openPopup('children/subi8.jpg','Our favorite person 💕','Life feels softer and safer because of you ❤️',event)">
+onclick="openPopup('subi8.jpg','Our favorite person 💕','Life feels softer and safer because of you ❤️',event)">
 Heart</div>
 
 <div class="balloon balloon9"
-onclick="openPopup('children/subi5.jpg','Forever your little girls 🌷','Even years later, we still need you every day 💖',event)">
+onclick="openPopup('subi9.jpg','Forever your little girls 🌷','Even years later, we still need you every day 💖',event)">
 Family</div>
 
 <div class="balloon balloon10"
-onclick="openPopup('children/subi10.jpg','Happy Mother’s Day Amma ❤️','Thank you for building a beautiful life for Subi and Diya ✨',event)">
+onclick="openPopup('subi10.jpg','Happy Mother’s Day Amma ❤️','Thank you for building a beautiful life for Subi and Diya ✨',event)">
 Raji</div>
 
 </div>
@@ -563,7 +545,7 @@ function closePopup(){
     document.getElementById('popup').style.display='none';
 }
 
-/* Floating Hearts */
+/* Hearts */
 
 function createHeart(){
 
