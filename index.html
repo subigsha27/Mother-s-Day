@@ -32,7 +32,7 @@ body{
     animation:bgMove 12s ease infinite;
 }
 
-/* Background */
+/* Background Animation */
 
 @keyframes bgMove{
 
@@ -121,7 +121,7 @@ body{
     transform:scale(1.08);
 }
 
-/* Game */
+/* Balloon Area */
 
 .game{
 
@@ -459,7 +459,7 @@ onclick="openPopup('subi1.jpg','You are our safe place ❤️','No matter how ol
 Love</div>
 
 <div class="balloon balloon2"
-onclick="openPopup('subi2.png','The heart of our family 💖','Everything feels better when you are around Amma ✨',event)">
+onclick="openPopup('subi2.jpg','The heart of our family 💖','Everything feels better when you are around Amma ✨',event)">
 Smile</div>
 
 <div class="balloon balloon3"
@@ -531,7 +531,9 @@ function openPopup(image,title,text,event){
 
     createConfetti(event.clientX,event.clientY);
 
-    document.getElementById('popupImg').src=image;
+    const popupImg = document.getElementById('popupImg');
+
+    popupImg.src = './' + image;
 
     document.getElementById('popupTitle').innerHTML=title;
 
